@@ -1,11 +1,9 @@
 function output=sigmoid(z)
-    output = 0;
-    % modify this to return z passed through the sigmoid function
+    %return z passed through the sigmoid function
     %%%%%%%%%%%%%%%%%%%%%%%%
-    
+    %         ______1________
+    %output =        -(z')
+    %          1 + e^
     %%%%%%%%%%%%%%%%%%%%%%%%
-    
-    
-%END OF FUNCTION
-
-
+    output = 1.0 ./(1.0 + exp(-(z')));
+end

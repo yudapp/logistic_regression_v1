@@ -17,7 +17,5 @@ function h= plot_data_function(x,y,title)
     end
     xlabel('x1')
     ylabel('x2')
-   
-    %END OF FUNCTION
-
+end
     

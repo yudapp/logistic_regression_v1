@@ -16,7 +16,6 @@ iterations = 100;
 [training_input,training_output,test_input,test_output] = return_test_set(X,y,10);
 
 [new_theta,cost_array]=gradient_descent(training_input,training_output,theta,alpha,iterations);
-
 display(['Training error:',num2str(compute_cost(training_input,training_output,new_theta))]);
 h=plot_data_function(training_input,training_output);
 plot_boundary(training_input,new_theta);
@@ -27,6 +26,5 @@ close(h)
 display(['Test error:',num2str(compute_cost(test_input,test_output,new_theta))])
 plot_data_function(test_input,test_output);
 plot_boundary(test_input,new_theta);
-
 display('Press enter')
 pause
